@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promptly | AI Prompt Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1E3A8A 0%, #334155 100%);
+        }
+        .prompt-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .prompt-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-left-color: #1E3A8A;
+        }
+        .category-chip {
+            transition: all 0.2s ease;
+        }
+        .category-chip:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .active-category {
+            background-color: #1E3A8A;
+            color: white;
+        }
+        .modal {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .modal-enter {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .modal-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* New styles for prompt details */
+        .prompt-details {
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        .prompt-details.expanded {
+            max-height: none;
+        }
+        .read-more {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, transparent, white);
+            padding-top: 20px;
+            text-align: center;
+        }
+        .read-more.expanded {
+            position: static;
+            background: none;
+            padding-top: 0;
+        }
+        /* New styles for prompt preview */
+        .prompt-preview {
+            background-color: #f8f9fa;
+            border-left: 4px solid #1E3A8A;
+            padding: 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-robot text-3xl"></i>
+                    <h1 class="text-2xl font-bold">Promptly</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="gradient-bg rounded-xl text-white p-8 mb-8">
+            <div class="max-w-2xl">
+                <h2 class="text-3xl font-bold mb-4">Discover & Share Powerful AI Prompts</h2>
+                <p class="text-lg mb-6">Boost your productivity with our curated collection of high-quality prompts for Copilot, Perplexity, ChatGPT, Claude, and other AI assistants.</p>
+            </div>
+        </div>
+
+        <!-- Search and Filters -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+                <div class="flex-1">
+                    <label for="search" class="block text-sm font-medium text-gray-700 mb-1">Search Prompts</label>
+                    <div class="relative">
+                        <input type="text" id="search" placeholder="Find prompts for any scenario..." 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                        <button class="absolute right-3 top-3 text-gray-400 hover:text-emerald-600">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label for="language" class="block text-sm font-medium text-gray-700 mb-1">Language</label>
+                    <select id="language" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                        <option value="all">All Languages</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="outputType" class="block text-sm font-medium text-gray-700 mb-1">Output Type</label>
+                    <select id="outputType" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500">
+                        <option value="all">All Types</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Categories</h2>
+            <div id="categoriesContainer" class="flex flex-wrap gap-3">
+                <!-- Categories will be loaded dynamically from the JSON file -->
+            </div>
+        </div>
+
+        <!-- Prompts Grid -->
+        <div>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-semibold text-gray-800">Popular Prompts</h2>
+                <div class="flex items-center space-x-2">
+                    <span id="showingCount" class="text-sm text-gray-500">Showing <span id="visibleCount">0</span> prompts</span>
+                    <select id="sortSelect" class="text-sm border border-gray-300 rounded px-2 py-1">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="asc">A-Z (Title)</option>
+                        <option value="desc">Z-A (Title)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="promptsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Prompts will be loaded here from the JSON file -->
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-center">
+            <button id="loadMoreBtn" class="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition">
+                Load More Prompts
+            </button>
+        </div>
+
+        <div class="mt-8 text-center">
+            <p id="totalPromptsCount" class="text-gray-600 text-sm">Total Prompts: 0</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t border-gray-200 mt-12">
+        <div class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Promptly</h3>
+                    <p class="text-gray-600">The ultimate library of AI prompts to boost your productivity and creativity.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">© 2025 Promptly - Heni Karaa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Elements
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const promptsGrid = document.getElementById('promptsGrid');
+        const showingCount = document.getElementById('showingCount');
+        const visibleCount = document.getElementById('visibleCount');
+        const searchInput = document.getElementById('search');
+        const languageFilter = document.getElementById('language');
+        const outputTypeFilter = document.getElementById('outputType');
+        const sortSelect = document.getElementById('sortSelect');
+        const categoriesContainer = document.getElementById('categoriesContainer');
+        const totalPromptsCount = document.getElementById('totalPromptsCount');
+        
+        // Global variables
+        let allPrompts = [];
+        let filteredPrompts = [];
+        let visiblePrompts = 0;
+        const promptsPerLoad = 6;
+        let uniqueCategories = new Set();
+        let selectedCategory = 'All';
+        
+        // Search functionality
+        searchInput.addEventListener('input', () => {
+            filterPrompts();
+        });
+        
+        // Language filter
+        languageFilter.addEventListener('change', () => {
+            filterPrompts();
+        });
+        
+        // Output type filter
+        outputTypeFilter.addEventListener('change', () => {
+            filterPrompts();
+        });
+        
+        // Sort functionality
+        sortSelect.addEventListener('change', () => {
+            filterPrompts();
+        });
+        
+        // Load more prompts
+        loadMoreBtn.addEventListener('click', () => {
+            loadMorePrompts();
+        });
+        
+        // Initialization
+        function init() {
+            fetchPrompts();
+        }
+        
+        // Fetch prompts from JSON file
+        function fetchPrompts() {
+            fetch('prompts.json')
+                .then(response => response.json())
+                .then(promptsData => {
+                    const outputTypes = new Set(); // To store unique output types
+
+                    allPrompts = promptsData.map((prompt, index) => {
+                        uniqueCategories.add(prompt.category);
+                        outputTypes.add(prompt.outputType); // Collect output types
+                        return {
+                            id: index, // Add an ID for sorting by newest/oldest
+                            category: prompt.category,
+                            title: prompt.title,
+                            prompt: prompt.prompt,
+                            language: prompt.language,
+                            outputType: prompt.outputType,
+                            categoryClass: getCategoryClass(prompt.category.toLowerCase())
+                        };
+                    });
+
+                    // Populate the Output Type filter dropdown
+                    populateOutputTypeFilter(outputTypes);
+
+                    // Create category buttons
+                    createCategoryButtons();
+
+                    // Initialize filtered prompts with all prompts
+                    filteredPrompts = [...allPrompts];
+
+                    // Load initial prompts
+                    filterPrompts();
+                })
+                .catch(error => {
+                    console.error('Error loading prompts:', error);
+                    // Fallback to some default prompts if the file can't be loaded
+                    const fallbackData = [
+                        {
+                            "category": "Writing",
+                            "title": "Blog Post Introduction",
+                            "prompt": "Write a compelling introduction for a blog post about [topic] that grabs attention and encourages readers to continue. Include a hook, context, and a clear thesis statement.",
+                            "language": "English",
+                            "outputType": "Text"
+                        },
+                        {
+                            "category": "Coding",
+                            "title": "Python Function",
+                            "prompt": "Write a Python function that takes [input parameters] and returns [expected output]. Include error handling and docstrings. Make sure the code is efficient and follows PEP 8 guidelines.",
+                            "language": "English",
+                            "outputType": "Code"
+                        },
+                        {
+                            "category": "Marketing",
+                            "title": "Social Media Post",
+                            "prompt": "Create a LinkedIn post announcing [product/feature] that highlights its benefits for [target audience]. Keep it professional yet engaging, and include a call-to-action.",
+                            "language": "English",
+                            "outputType": "Text"
+                        },
+                        {
+                            "category": "Education",
+                            "title": "Study Guide",
+                            "prompt": "Create a comprehensive study guide for [subject/topic] that covers all key concepts. Organize the information in a clear hierarchy with definitions, examples, and practice questions.",
+                            "language": "Spanish",
+                            "outputType": "List"
+                        },
+                        {
+                            "category": "Business",
+                            "title": "SWOT Analysis",
+                            "prompt": "Perform a SWOT analysis for [company/product] considering the current market conditions. Provide detailed points for each quadrant and suggest strategic recommendations.",
+                            "language": "English",
+                            "outputType": "Table"
+                        },
+                        {
+                            "category": "Creative",
+                            "title": "Short Story",
+                            "prompt": "Write a short story set in [time period/location] featuring a protagonist who [character trait]. Include vivid descriptions, dialogue, and a twist ending. Keep it under 1000 words.",
+                            "language": "French",
+                            "outputType": "Text"
+                        }
+                    ];
+                    
+                    allPrompts = fallbackData.map((prompt, index) => {
+                        uniqueCategories.add(prompt.category);
+                        return {
+                            id: index,
+                            category: prompt.category,
+                            title: prompt.title,
+                            prompt: prompt.prompt,
+                            language: prompt.language,
+                            outputType: prompt.outputType,
+                            categoryClass: getCategoryClass(prompt.category.toLowerCase())
+                        };
+                    });
+                    
+                    createCategoryButtons();
+                    filteredPrompts = [...allPrompts];
+                    filterPrompts();
+                });
+        }
+
+        // Populate the Output Type filter dropdown
+        function populateOutputTypeFilter(outputTypes) {
+            const outputTypeFilter = document.getElementById('outputType');
+            outputTypeFilter.innerHTML = '<option value="all">All Types</option>'; // Default option
+
+            outputTypes.forEach(type => {
+                const option = document.createElement('option');
+                option.value = type.toLowerCase();
+                option.textContent = type;
+                outputTypeFilter.appendChild(option);
+            });
+        }
+        
+        // Create category buttons from unique categories
+        function createCategoryButtons() {
+            // Add "All" category button
+            const allButton = document.createElement('button');
+            allButton.className = 'category-chip active-category px-4 py-2 rounded-full bg-emerald-600 text-white font-medium';
+            allButton.textContent = 'All';
+            allButton.addEventListener('click', () => {
+                document.querySelectorAll('.category-chip').forEach(btn => {
+                    btn.classList.remove('active-category', 'bg-emerald-600', 'text-white');
+                    btn.classList.add('bg-gray-100', 'text-gray-800');
+                });
+                allButton.classList.add('active-category', 'bg-emerald-600', 'text-white');
+                allButton.classList.remove('bg-gray-100', 'text-gray-800');
+                selectedCategory = 'All';
+                filterPrompts();
+            });
+            categoriesContainer.appendChild(allButton);
+            
+            // Add buttons for each unique category
+            uniqueCategories.forEach(category => {
+                const button = document.createElement('button');
+                button.className = 'category-chip px-4 py-2 rounded-full bg-gray-100 text-gray-800 font-medium hover:bg-gray-200';
+                button.textContent = category;
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.category-chip').forEach(btn => {
+                        btn.classList.remove('active-category', 'bg-emerald-600', 'text-white');
+                        btn.classList.add('bg-gray-100', 'text-gray-800');
+                    });
+                    button.classList.add('active-category', 'bg-emerald-600', 'text-white');
+                    button.classList.remove('bg-gray-100', 'text-gray-800');
+                    selectedCategory = category;
+                    filterPrompts();
+                });
+                categoriesContainer.appendChild(button);
+            });
+        }
+        
+        // Filter prompts based on search and filters
+        function filterPrompts() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedLanguage = languageFilter.value;
+            const selectedOutputType = outputTypeFilter.value;
+            const sortOption = sortSelect.value;
+            
+            // Filter prompts
+            filteredPrompts = allPrompts.filter(prompt => {
+                // Filter by category
+                if (selectedCategory !== 'All' && prompt.category !== selectedCategory) {
+                    return false;
+                }
+                
+                // Filter by language
+                if (selectedLanguage !== 'all' && prompt.language.toLowerCase() !== selectedLanguage.toLowerCase()) {
+                    return false;
+                }
+                
+                // Filter by output type
+                if (selectedOutputType !== 'all' && prompt.outputType.toLowerCase() !== selectedOutputType.toLowerCase()) {
+                    return false;
+                }
+                
+                // Filter by search term
+                if (searchTerm) {
+                    const searchFields = [
+                        prompt.title.toLowerCase(),
+                        prompt.prompt.toLowerCase(),
+                        prompt.category.toLowerCase(),
+                        prompt.language.toLowerCase(),
+                        prompt.outputType.toLowerCase()
+                    ];
+                    
+                    return searchFields.some(field => field.includes(searchTerm));
+                }
+                
+                return true;
+            });
+            
+            // Sort prompts based on selected option
+            switch(sortOption) {
+                case 'newest':
+                    filteredPrompts.sort((a, b) => b.id - a.id); // Newest first (higher IDs come first)
+                    break;
+                case 'oldest':
+                    filteredPrompts.sort((a, b) => a.id - b.id); // Oldest first (lower IDs come first)
+                    break;
+                case 'asc':
+                    filteredPrompts.sort((a, b) => a.title.localeCompare(b.title)); // A-Z
+                    break;
+                case 'desc':
+                    filteredPrompts.sort((a, b) => b.title.localeCompare(a.title)); // Z-A
+                    break;
+            }
+            
+            // Reset visible prompts counter
+            visiblePrompts = 0;
+            
+            // Clear the grid
+            promptsGrid.innerHTML = '';
+            
+            // Load the first batch of prompts
+            loadMorePrompts();
+
+            // Update total prompts count
+            updateTotalPromptsCount();
+        }
+        
+        // Load more prompts
+        function loadMorePrompts() {
+            const remainingPrompts = filteredPrompts.length - visiblePrompts;
+            const promptsToLoad = Math.min(promptsPerLoad, remainingPrompts);
+            
+            for (let i = 0; i < promptsToLoad; i++) {
+                if (visiblePrompts < filteredPrompts.length) {
+                    const promptData = filteredPrompts[visiblePrompts];
+                    const promptCard = createPromptCard(promptData);
+                    promptsGrid.appendChild(promptCard);
+                    visiblePrompts++;
+                }
+            }
+            
+            // Update showing count
+            visibleCount.textContent = visiblePrompts;
+            
+            // Hide or show load more button
+            if (visiblePrompts >= filteredPrompts.length) {
+                loadMoreBtn.classList.add('hidden');
+            } else {
+                loadMoreBtn.classList.remove('hidden');
+            }
+        }
+        
+        // Function to create a prompt card element
+        function createPromptCard(data) {
+            const promptCard = document.createElement('div');
+            promptCard.className = 'prompt-card bg-white rounded-xl shadow-md p-6';
+            
+            promptCard.innerHTML = `
+                <div class="flex justify-between items-start mb-3">
+                    <span class="px-3 py-1 ${data.categoryClass} text-xs font-medium rounded-full">${data.category}</span>
+                    <div class="flex space-x-2">
+                        <button class="text-gray-400 hover:text-emerald-600 copy-btn">
+                            <i class="far fa-copy"></i>
+                        </button>
+
+                    </div>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">${data.title}</h3>
+                <div class="prompt-details mb-4">
+                    <p class="text-gray-600">"${data.prompt}"</p>
+                    <div class="read-more">
+                        <button class="text-emerald-600 text-sm font-medium read-more-btn">Read more</button>
+                    </div>
+                </div>
+                <div class="prompt-preview hidden">
+                    <p>Example output would appear here...</p>
+                </div>
+                <div class="flex justify-between items-center text-sm">
+                    <div class="flex items-center">
+                        <span class="text-gray-500 mr-3"><i class="fas fa-language mr-1"></i> ${data.language}</span>
+                        <span class="text-gray-500"><i class="fas fa-${getOutputTypeIcon(data.outputType)} mr-1"></i> ${data.outputType}</span>
+                    </div>
+                </div>
+            `;
+            
+            // Add event listeners to the new card
+            const copyBtn = promptCard.querySelector('.copy-btn');
+            copyBtn.addEventListener('click', (e) => {
+                const promptText = e.target.closest('.prompt-card').querySelector('.prompt-details p').textContent;
+                navigator.clipboard.writeText(promptText.trim());
+                
+                const originalIcon = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+                copyBtn.classList.remove('text-gray-400');
+                copyBtn.classList.add('text-emerald-500');
+                
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalIcon;
+                    copyBtn.classList.remove('text-emerald-500');
+                    copyBtn.classList.add('text-gray-400');
+                }, 2000);
+            });
+            
+            const readMoreBtn = promptCard.querySelector('.read-more-btn');
+            readMoreBtn.addEventListener('click', (e) => {
+                const promptCard = e.target.closest('.prompt-card');
+                const details = promptCard.querySelector('.prompt-details');
+                const readMore = promptCard.querySelector('.read-more');
+
+                if (details.classList.contains('expanded')) {
+                    details.classList.remove('expanded');
+                    readMore.classList.remove('expanded');
+                    e.target.textContent = 'Read more';
+                } else {
+                    details.classList.add('expanded');
+                    readMore.classList.add('expanded');
+                    e.target.textContent = 'Read less';
+                }
+            });
+            
+            return promptCard;
+        }
+        
+        // Helper function to get category class
+        function getCategoryClass(category) {
+            switch(category.toLowerCase()) {
+                case 'writing': return 'bg-blue-100 text-blue-800';
+                case 'coding': return 'bg-green-100 text-green-800';
+                case 'marketing': return 'bg-purple-100 text-purple-800';
+                case 'education': return 'bg-yellow-100 text-yellow-800';
+                case 'business': return 'bg-red-100 text-red-800';
+                case 'creative': return 'bg-pink-100 text-pink-800';
+                default: return 'bg-gray-100 text-gray-800';
+            }
+        }
+        
+        // Helper function to get icon for output type
+        function getOutputTypeIcon(outputType) {
+            switch(outputType.toLowerCase()) {
+                case 'code': return 'code';
+                case 'list': return 'list-ul';
+                case 'table': return 'table';
+                default: return 'file-alt';
+            }
+        }
+
+        // Update total prompts count
+        function updateTotalPromptsCount() {
+            totalPromptsCount.textContent = `Total Prompts: ${filteredPrompts.length}`;
+        }
+        
+        // Initialize the app
+        init();
+    </script>
+</html>
