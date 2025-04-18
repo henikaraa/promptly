@@ -10533,8 +10533,2071 @@
     "prompt": "Act as a Time Management Specialist. Explain the 'Timeboxing' technique. Describe how allocating a fixed time period (a 'time box') to a specific task and working only on that task during the box helps improve focus, limit perfectionism, and ensure progress on larger projects.",
     "language": "English",
     "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Answer FAQs on Policy",
+    "prompt": "Can you explain the return/exchange policy using the following summary? \n[Insert a summary of your company’s policy]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Refine Written Communication",
+    "prompt": "Can you provide suggestions for improving the flow of my executive summary?\n[Insert your executive summary]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create Meeting Outline/Deck",
+    "prompt": "Could you help me create a slide deck outline for our upcoming sales team meeting?\n[Insert details about the meeting objectives and attendees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Team-Building Activity Ideas",
+    "prompt": "Can you suggest some creative team-building activities that our department can participate in?\n[Provide some information about your department's size and interests]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Set Deadline Reminders",
+    "prompt": "Could you remind me about the deadline for submitting the project proposal?\n[Specify the project name and the date the proposal is due]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Research Industry Trends",
+    "prompt": "Can you gather information on the latest trends in digital marketing?\n[Specify the specific aspect or subtopic in digital marketing you're interested in]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Plan Company Events",
+    "prompt": "Could you help me with planning our annual holiday party?\n[Include any preferences or requirements for the party, such as date, time, location, and expected number\u2028 of attendees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Blog/Social Media Content Ideas",
+    "prompt": "Can you provide some blog post ideas related to customer experience?\n[Specify any specific focus areas or target audience for the blog content]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Assist with Data Entry/Organization",
+    "prompt": "Can you help me organize the customer data spreadsheet?\n[Specify the specific criteria or format for organizing the data]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Provide Training Resources/Documentation",
+    "prompt": "Can you provide a step-by-step guide on how to create a new deal in our CRM?\n[Specify the CRM platform being used and any specific requirements or fields to consider]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Suggest Employee Recognition Programs",
+    "prompt": "What are some creative ways we can recognize and appreciate our employees' hard work\u2028 and achievements?\n[Provide some background information on the company culture and the number of employees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Assist with Meeting Scheduling",
+    "prompt": "Can you help me find a time that works for everyone to schedule a team meeting?\n[Specify the desired meeting duration, the participants' availability, and any preferred dates or times]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Team Productivity Tools",
+    "prompt": "Can you suggest some tools or software that can help our team collaborate and stay organized?\n[Specify any specific features or requirements]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Assist with Customer Support Inquiries",
+    "prompt": "Can you help me respond to a customer's support ticket about a billing issue?\n[Provide necessary details like the customer's name and the specific issue]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Internal Communication Improvement Ideas",
+    "prompt": "What are some creative ways we can enhance communication among different departments in\u2028 our company?\n[Provide any current challenges or pain points in communication]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create Project Timeline/Roadmap",
+    "prompt": "Can you assist me in creating a timeline for our upcoming marketing campaign?\n[Specify the campaign start and end dates, key milestones, and any dependencies]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Improve Email Marketing Metrics",
+    "prompt": "Can you give me some tips on improving our email open rates and click-through rates?\n[Specify any specific challenges or current performance metrics]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Suggest Lead Generation Tactics",
+    "prompt": "Can you suggest some effective lead generation tactics for our sales team?\n[Provide any target audience or industry information]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Suggest Leadership Training",
+    "prompt": "Can you suggest some online courses or training programs for improving leadership skills?\n[Specify any specific focus areas or desired outcomes]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Organize Digital Files/Documents",
+    "prompt": "Can you assist me in organizing our shared drive and creating a standardized naming convention?\n[Specify any existing categories or folder structure]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Marketing Content Creation",
+    "prompt": "Can you help me write engaging copy for our upcoming product brochure?\n[Provide any specific details or key features that should be highlighted]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Virtual Team Building Ideas",
+    "prompt": "Can you suggest some virtual team-building activities for our remote employees?\n[Provide information on the number of remote employees and any tools or platforms available for\u2028 virtual activities]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Project Management Software",
+    "prompt": "What project management software would you recommend for our team to improve productivity\u2028 and collaboration?\n[Specify any specific features or integrations needed]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Market Research/Competitor Analysis",
+    "prompt": "Can you help me gather information on our top competitors and their marketing strategies?\n[Specify the industry or market segment and any key competitors]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Wellness Program Ideas",
+    "prompt": "Can you suggest some initiatives or activities to promote employee wellness and work-life balance?\n[Provide information on the company's current wellness programs or initiatives]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Create Customer Satisfaction Survey",
+    "prompt": "Can you assist me in designing a customer satisfaction survey to gather feedback on our products \nand services?\n[Specify any specific questions or metrics to include]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Recommend Customer Retention Strategies",
+    "prompt": "What are some effective strategies or tactics to improve customer retention for our business?\n[Provide any information on current customer churn rates or challenges]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Social Media Management/Scheduling",
+    "prompt": "Can you help me schedule our social media posts for the upcoming week?\n[Specify the social media platforms and any specific content or hashtags to include]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Website Conversion Rate Optimization Ideas",
+    "prompt": "Can you give me some suggestions on how to increase our website's conversion rates?\n[Provide any specific pages or areas of the website to focus on]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Remote Collaboration Tools",
+    "prompt": "What tools or platforms would you recommend for our remote team to collaborate effectively?\n[Specify any specific features or integrations needed]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Email Marketing Campaigns",
+    "prompt": "Can you help me design and send out our monthly newsletter to our subscribers?\n[Provide any specific content or promotions to be included]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Large Team Building Ideas (Retreat)",
+    "prompt": "Can you suggest some engaging activities for our company retreat with over 200 employees?\n[Provide any specific location or theme for the retreat]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Recommend Internal Process Streamlining",
+    "prompt": "What are some ways we can simplify and streamline our project approval process?\n[Provide any current pain points or bottlenecks in the process]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Online Advertising Campaigns",
+    "prompt": "Can you help me set up and optimize our Google Ads campaign?\n[Specify any specific campaign goals or target audience]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Customer Onboarding Improvement Ideas",
+    "prompt": "Can you give me some suggestions on how to enhance our customer onboarding experience?\n[Provide any current challenges or pain points in onboarding]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Recommend Team Training/Development Programs",
+    "prompt": "Can you suggest some training programs or workshops to enhance our team's skills and knowledge?\n[Provide any specific areas or skills to focus on]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Data Analysis",
+    "title": "Assist with Data Analysis and Reporting",
+    "prompt": "Can you help me analyze and summarize our monthly sales data?\n[Specify any specific metrics or reports required]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Cross-selling/Upselling Strategy Ideas",
+    "prompt": "Can you give me some recommendations on how to effectively cross-sell or upsell our products?\n[Provide any information on current customer purchasing patterns]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Recommend Employee Engagement Initiatives",
+    "prompt": "What are some initiatives or programs we can implement to improve employee engagement\u2028 and morale?\n[Provide any current challenges or feedback from employee surveys]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Market Segmentation/Target Audience Analysis",
+    "prompt": "Can you help me identify and define our target audience for a new product launch?\n[Specify any specific demographics or psychographics to consider]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Remote/Distributed Team Building Ideas",
+    "prompt": "Can you suggest some virtual team-building activities that can help foster collaboration and \nconnectivity among our remote and distributed teams?\n[Provide information on the number of remote employees and any tools or platforms available for\u2028 virtual activities]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Time Management Techniques",
+    "prompt": "What are some effective time management techniques or strategies that can help improve productivity \nand efficiency?\n[Specify any specific challenges or areas where time management is needed]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Landing Page Creation/Optimization",
+    "prompt": "Can you help me create a high-converting landing page for our upcoming lead generation campaign?\n[Provide any specific content or design preferences]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Recognition/Rewards Program Ideas",
+    "prompt": "Can you suggest some creative ways to recognize and reward our employees for their hard work\u2028 and achievements?\n[Provide information on the company's budget and any existing recognition programs]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Recommend Customer Service Improvement Strategies",
+    "prompt": "What are some best practices or strategies to enhance our customer service and support efforts?\n[Provide any specific feedback or areas of improvement]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Social Media Content Calendar Creation",
+    "prompt": "Can you help me create a content calendar for our social media platforms for the next quarter?\n[Specify the desired posting frequency and any key events or promotions]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Feedback/Performance Review Improvement Ideas",
+    "prompt": "Can you give me some suggestions on how to make our employee feedback and performance review \nprocess more effective and meaningful?\n[Provide any specific challenges or feedback from employees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Recommend A/B Testing and Optimization Practices",
+    "prompt": "What are some best practices for conducting A/B testing and optimizing our website or\u2028 marketing campaigns?\n[Provide any specific elements or metrics to focus on]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Segmentation for Targeted Marketing",
+    "prompt": "Can you help me segment our customer database based on specific criteria for our upcoming targeted \nmarketing campaign?\n[Specify the desired segmentation criteria or target audience]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Ideas for Improving Remote Employee Engagement",
+    "prompt": "Can you give me some suggestions on how to boost employee engagement and motivation in a remote \nwork setup?\n[Provide any specific challenges or feedback from employees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Recommend Email Deliverability Improvement Strategies",
+    "prompt": "What are some strategies or best practices to improve our email deliverability rates and avoid being \nmarked as spam?\n[Provide any specific challenges or email marketing platforms being used]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Loyalty Program Creation",
+    "prompt": "Can you help me design and implement a customer loyalty program to reward our repeat customers?\n[Provide any specific rewards or incentives to consider]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Website Usability/UX Improvement Ideas",
+    "prompt": "Can you suggest some ways to enhance the usability and user experience of our website?\n[Specify any specific pain points or user feedback]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Remote Team Communication Tools",
+    "prompt": "What communication and collaboration tools would you recommend for our remote team to stay \nconnected and productive?\n[Specify any specific features or integrations needed]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Feedback Survey Creation",
+    "prompt": "Can you help me design a customer feedback survey to gather insights on our products and services?\n[Specify any specific questions or metrics to include]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Sales Conversion Rate Improvement Ideas",
+    "prompt": "Can you give me some suggestions on how to increase our sales conversion rates and close\u2028 more deals?\n[Provide any specific sales processes or metrics to focus on]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Recommend Website SEO Improvement Strategies",
+    "prompt": "What are some strategies or tactics to improve our website's SEO and increase organic traffic?\n[Provide any specific keywords or competitors to consider]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Referral Program Creation",
+    "prompt": "Can you help me develop a customer referral program to incentivize our existing customers to refer\u2028 new leads?\n[Provide any specific rewards or incentives to offer]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Onboarding Improvement Ideas",
+    "prompt": "Can you give me some suggestions on how to enhance our employee onboarding experience and make \nit more efficient?\n[Provide any specific challenges or pain points in onboarding]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Recommend Effective CRM Strategies",
+    "prompt": "What are some best practices or strategies for managing and nurturing customer relationships using our \nCRM system?\n[Specify the CRM platform being used and any specific challenges or goals]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Advocacy Program Creation",
+    "prompt": "Can you help me develop a customer advocacy program to empower and mobilize our loyal customers \nto promote our brand?\n[Provide any specific rewards or incentives to offer and any existing customer base]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Generate Employee Training/Development Enhancement Ideas",
+    "prompt": "Can you give me some suggestions on how to enhance our employee training and development \nprograms to foster continuous learning and growth?\n[Provide any specific areas or skills to focus on and any existing training initiatives]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Website Performance/Speed Improvement Ideas",
+    "prompt": "What are some strategies or tools we can use to improve our website's loading speed and\u2028 overall performance?\n[Specify any specific challenges or metrics to focus on]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Retention Campaign Creation",
+    "prompt": "Can you help me design and execute a customer retention campaign to reduce churn and increase \ncustomer loyalty?\n[Provide any specific offers or messages to include]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Team Recognition/Appreciation Activity Ideas",
+    "prompt": "Can you suggest some creative ways to recognize and appreciate our team members' contributions\u2028 and accomplishments?\n[Provide any specific team size or dynamics]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Remote Collaboration/Project Management Tools",
+    "prompt": "What collaboration and project management tools would you recommend for our remote team to \nstreamline workflows and stay organized?\n[Specify any specific features or integrations needed]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Influencer Marketing Campaigns",
+    "prompt": "Can you help me identify and collaborate with relevant influencers for our marketing campaigns?\n[Specify the target audience and any specific goals or budget]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Customer Experience Improvement Ideas",
+    "prompt": "Can you give me suggestions on how to enhance our overall customer experience and ensure\u2028 customer satisfaction?\n[Provide any specific pain points or feedback from customers]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Recommend Internal Knowledge Sharing Improvement Strategies",
+    "prompt": "What are some strategies or tools that can facilitate better knowledge sharing and communication \namong our internal teams?\n[Provide any specific challenges or areas of improvement]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Creating/Managing Testimonials",
+    "prompt": "Can you help me collect and leverage testimonials to showcase the value of our products or services?\n[Specify any specific channels or platforms to use]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Motivation/Morale Improvement Ideas",
+    "prompt": "Can you give me some suggestions on how to boost employee motivation and morale in the workplace?\n[Provide any specific challenges or feedback from employees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Recommend PPC Campaign Optimization Strategies",
+    "prompt": "What are some strategies or tactics to improve the performance and ROI of our PPC campaigns?\n[Specify any specific advertising platforms being used]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Social Media Content Curation/Creation",
+    "prompt": "Can you help me curate and create engaging content for our social media channels?\n[Provide any specific target audience or themes]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Customer Self-Service Resource Improvement Ideas",
+    "prompt": "Can you give me suggestions on how to enhance our customer self-service resources, such as FAQs or \nknowledge bases?\n[Provide any specific pain points or feedback from customers]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Recommend Workplace Diversity/Inclusion Improvement Strategies",
+    "prompt": "What are some strategies or initiatives we can implement to foster diversity and inclusion in\u2028 our workplace?\n[Provide any specific challenges or areas of improvement]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Segmentation for Personalized Marketing",
+    "prompt": "Can you help me segment our customer database based on their preferences or behaviors for \ntargeted marketing campaigns?\n[Specify the desired segmentation criteria or target audience]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Feedback/Communication Process Improvement Ideas",
+    "prompt": "Can you suggest some ways to make our employee feedback and communication processes more \neffective and transparent?\n[Provide any specific challenges or feedback from employees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Workflow Automation/Streamlining Tools",
+    "prompt": "What are some tools or technologies we can use to automate and streamline our business workflows \nand processes?\n[Provide any specific pain points or inefficiencies in current workflows]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Email Marketing Automation Workflows",
+    "prompt": "Can you help me set up and optimize our email marketing automation workflows to improve \nengagement and conversions?\n[Specify any specific segmentation or triggers to consider]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Customer Retention/Loyalty Program Improvement Ideas",
+    "prompt": "Can you give me suggestions on how to enhance our customer retention and loyalty programs to \nincrease customer lifetime value?\n[Provide any specific challenges or current program details]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Problem solving",
+    "title": "Recommend Website Accessibility Improvement Strategies",
+    "prompt": "What are some strategies or techniques to make our website more accessible for users with disabilities?\n[Specify any specific accessibility guidelines or regulations to follow]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Satisfaction Survey Creation",
+    "prompt": "Can you help me design and implement a customer satisfaction survey to gather feedback on our \nproducts or services?\n[Provide any specific questions or rating scales to include]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Collaboration/Teamwork Improvement Ideas",
+    "prompt": "Can you give me some suggestions on how to foster better collaboration and teamwork among\u2028 our employees?\n[Provide any specific challenges or team dynamics]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Recommend Customer Journey Map Optimization Strategies",
+    "prompt": "What are some strategies or tactics to optimize our customer journey and ensure positive touchpoints \nalong the way?\n[Provide any specific touchpoints or stages of the customer journey]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Assist with Customer Loyalty/Rewards Program Development",
+    "prompt": "Can you help me develop a customer loyalty and rewards program to incentivize repeat purchases and \ncustomer retention?\n[Provide any specific rewards or incentives to offer]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Employee Wellness/Work-Life Balance Improvement Ideas",
+    "prompt": "Can you give me some suggestions on how to promote employee wellness and work-life balance in \nour organization?\n[Provide any specific challenges or feedback from employees]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Recommend Email Marketing Automation/Personalization Practices",
+    "prompt": "What are some key practices or techniques for enhancing our email marketing automation and \npersonalization efforts?\n[Specify any specific personalization variables or segmentation criteria]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Assist with Complaint Resolution Process Creation",
+    "prompt": "Can you help me design an effective customer feedback and complaint resolution process to address \ncustomer concerns and improve satisfaction?\n[Provide any specific channels or escalation procedures]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Generate Website Conversion Funnel Improvement Ideas",
+    "prompt": "Can you give me suggestions on how to optimize our website conversion funnels and increase \nconversion rates?\n[Provide any specific funnel stages or metrics to focus on]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Recommend Customer Service Response Time Optimization Strategies",
+    "prompt": "What are some strategies or tools we can use to improve our customer service response times and \nensure timely resolutions?\n[Provide any specific challenges or average response time metrics]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Generate Internal Communication Enhancement Ideas",
+    "prompt": "Can you suggest ways to enhance communication between different teams or departments?\n[Provide some information about the challenges or areas for improvement]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Recommend Productivity Apps/Tools",
+    "prompt": "Can you suggest some project management tools that can help streamline our workflow?\n[Specify any specific requirements or integration preferences]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Provide Email Management Tips",
+    "prompt": "Can you provide tips for keeping my inbox organized and managing email overload?\n[Specify any specific challenges you're facing or desired email management practices]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Assist with Creating Meeting Agendas",
+    "prompt": "Can you help me create a well-structured meeting agenda for our weekly team meeting?\n[Include any specific discussion topics or goals for the meeting]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Provide Effective Time Management Guidance",
+    "prompt": "Can you recommend tips for effectively managing my time during busy periods?\n[Specify the specific challenges or time constraints you're facing]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Problem solving",
+    "title": "Assist with Technical Issue Troubleshooting",
+    "prompt": "Can you help me troubleshoot an issue I'm having with connecting to our CRM system?\n[Include any error messages or specific information about the problem]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Document/Presentation Templates",
+    "prompt": "Can you help me create a template for our weekly sales report presentation?\n[Specify any specific formatting or content requirements]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Provide Tips for Effective Project Delegation",
+    "prompt": "Can you suggest best practices for delegating tasks to team members without micromanaging?\n[Include any specific concerns or challenges you're facing]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Help Organize/Prioritize Customer Feedback",
+    "prompt": "Can you provide guidance on how to effectively gather and categorize customer feedback?\n[Specify any specific channels for feedback collection or desired categorization criteria]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Data Analysis",
+    "title": "Assist with KPI Tracking and Analysis",
+    "prompt": "Can you help me set up a dashboard to track and visualize our sales team's performance metrics?\n[Specify the specific KPIs you want to track and any desired visualization formats]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Brainstorm Blog Post Titles",
+    "prompt": "Act as my writing assistant. I'm writing a blog post about [topic]. Can you brainstorm 10 catchy and SEO-friendly titles for it?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Draft a Professional Email",
+    "prompt": "Act as my writing assistant. Please draft a professional email to [recipient name/role] regarding [subject]. Key points to include are: [point 1], [point 2], [point 3]. Maintain a [formal/informal] tone.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Generate Story Ideas",
+    "prompt": "Act as my writing assistant. I want to write a short story in the [genre] genre. Can you give me 5 unique story ideas involving [character type] and [setting element]?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Proofread Text for Errors",
+    "prompt": "Act as my writing assistant. Please proofread the following text for any grammatical errors, spelling mistakes, and punctuation issues:\n\n[Paste text here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Write Social Media Post Copy",
+    "prompt": "Act as my writing assistant. Draft 3 variations of a social media post for [Platform, e.g., LinkedIn, Twitter] announcing [event/product/news]. Target audience is [audience description]. Include relevant hashtags.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Summarize Article/Document",
+    "prompt": "Act as my writing assistant. Can you summarize the key points of the following article/document in [number] bullet points or a short paragraph?\n\n[Paste text or link here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Develop Character Backstory",
+    "prompt": "Act as my writing assistant. Help me develop a compelling backstory for my character, [Character Name], who is a [character description, e.g., reluctant hero, ambitious scientist]. Focus on their motivations and a key past event.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Outline Presentation Structure",
+    "prompt": "Act as my writing assistant. I need to give a presentation on [topic]. Can you help me outline a logical structure (e.g., introduction, key points, conclusion) for a [duration, e.g., 15-minute] presentation?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Rephrase Sentences for Clarity",
+    "prompt": "Act as my writing assistant. Can you rephrase the following sentences to make them clearer and more concise?\n\n[Paste sentences here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Write Product Description",
+    "prompt": "Act as my writing assistant. Write an engaging product description for [product name], a [product type]. Highlight key benefits like [benefit 1], [benefit 2] for the target customer [customer description].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Generate Dialogue for Scene",
+    "prompt": "Act as my writing assistant. Write a short dialogue scene between [Character A description] and [Character B description] discussing [topic]. The mood should be [mood, e.g., tense, humorous, sad].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Improve Readability of Text",
+    "prompt": "Act as my writing assistant. Review the following text and suggest ways to improve its readability (e.g., shorter sentences, bullet points, clearer headings):\n\n[Paste text here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft Meeting Minutes",
+    "prompt": "Act as my writing assistant. Based on these notes from our meeting about [topic]: [Paste notes here], can you draft formal meeting minutes including attendees, key decisions, and action items?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Poem on Theme",
+    "prompt": "Act as my writing assistant. Write a short poem (e.g., haiku, free verse, quatrain) on the theme of [theme, e.g., change, nature, technology].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Brainstorm Newsletter Subject Lines",
+    "prompt": "Act as my writing assistant. Generate 10 compelling subject lines for an email newsletter about [newsletter topic] targeting [audience]. Focus on increasing open rates.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Expand on Bullet Points",
+    "prompt": "Act as my writing assistant. Can you expand these bullet points into full sentences or a short paragraph for a report on [topic]?\n\n* [Point 1]\n* [Point 2]\n* [Point 3]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Describe a Setting",
+    "prompt": "Act as my writing assistant. Write a vivid description (2-3 paragraphs) of a setting: [Setting description, e.g., a bustling futuristic market, a quiet ancient library]. Focus on sensory details (sight, sound, smell).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Write Professional Bio",
+    "prompt": "Act as my writing assistant. Draft a short professional bio (approx. 100 words) for me, highlighting my role as [Your Role], key skills [Skill 1, Skill 2], and experience in [Industry/Area]. Use a [tone, e.g., formal, approachable] tone.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Check for Consistent Tone",
+    "prompt": "Act as my writing assistant. Please review the following text and check if the tone is consistent throughout. Point out any inconsistencies.\n\n[Paste text here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Write Website Call-to-Action (CTA)",
+    "prompt": "Act as my writing assistant. Generate 5 different Call-to-Action button texts for a website offering [Offer, e.g., free demo, newsletter signup]. Make them clear and action-oriented.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Generate Analogies/Metaphors",
+    "prompt": "Act as my writing assistant. Can you generate 3-5 analogies or metaphors to explain the complex concept of [complex concept, e.g., artificial intelligence, climate change]? Make them easy to understand.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Format Text Consistently",
+    "prompt": "Act as my writing assistant. Please format the following text using consistent headings, bullet points, and spacing according to [Style guide or preference, e.g., APA style, simple markdown].\n\n[Paste text here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft Proposal Section",
+    "prompt": "Act as my writing assistant. Help me draft the '[Section Name, e.g., Problem Statement, Proposed Solution]' section for a business proposal regarding [Project/Topic]. Key points to cover are: [point 1], [point 2].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Overcome Writer's Block",
+    "prompt": "Act as my writing assistant. I'm stuck writing about [topic]. Can you give me 5 creative prompts or exercises to help me overcome writer's block and get started again?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Write Ad Copy Variations",
+    "prompt": "Act as my writing assistant. Write 3 different versions of ad copy (headline + description) for a [Platform, e.g., Google Ads, Facebook Ad] promoting [Product/Service]. Focus on different angles like [Angle 1, e.g., benefit-driven], [Angle 2, e.g., scarcity], [Angle 3, e.g., question-based].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Outline from Text",
+    "prompt": "Act as my writing assistant. Can you read the following text and generate a hierarchical outline summarizing the main points and sub-points?\n\n[Paste text here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Opening Hook for Story/Article",
+    "prompt": "Act as my writing assistant. I'm starting a story/article about [topic]. Can you write 3 different compelling opening hooks (e.g., a question, a surprising statistic, a short anecdote) to grab the reader's attention?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Refine Cover Letter",
+    "prompt": "Act as my writing assistant. Please review my draft cover letter for the [Job Title] position at [Company Name]. Provide feedback on clarity, tone, and impact. Suggest improvements.\n\n[Paste cover letter draft here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Simplify Jargon/Technical Terms",
+    "prompt": "Act as my writing assistant. Can you simplify the following sentences by replacing jargon or technical terms with plainer language suitable for a [audience description, e.g., general audience]?\n\n[Paste sentences here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Write Testimonial Request Email",
+    "prompt": "Act as my writing assistant. Draft a polite email requesting a testimonial from a satisfied client, [Client Name], regarding their experience with [Product/Service]. Make it easy for them to respond.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Generate World-Building Details",
+    "prompt": "Act as my writing assistant. For my fantasy/sci-fi world, help me brainstorm unique details about [Aspect, e.g., the magic system, a specific culture's customs, a unique creature]. Give me 5 distinct ideas.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Check for Plagiarism (Conceptual)",
+    "prompt": "Act as my writing assistant. Can you explain how plagiarism checkers work and suggest ways I can check my writing to ensure I have properly cited sources and avoided unintentional plagiarism in this text?\n\n[Paste text here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft Follow-Up Email After Meeting",
+    "prompt": "Act as my writing assistant. Draft a follow-up email to attendees of the meeting about [topic] held on [date]. Summarize key discussion points ([point 1], [point 2]) and action items ([action item 1 assigned to X]).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Song Lyrics Snippet",
+    "prompt": "Act as my writing assistant. Write a short song lyric snippet (e.g., one verse and chorus) in the style of [Genre/Artist] about [Theme, e.g., heartbreak, hope, adventure].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Brainstorm Content Upgrade Ideas",
+    "prompt": "Act as my writing assistant. For my blog post about [topic], brainstorm 3-5 ideas for content upgrades (e.g., checklist, template, resource list) that readers could download in exchange for their email address.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Generate Synonyms/Antonyms",
+    "prompt": "Act as my writing assistant. Can you provide 5 synonyms and 3 antonyms for the word '[word]' as used in the context of '[brief context description]?'",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Develop Plot Twist Ideas",
+    "prompt": "Act as my writing assistant. I'm writing a story about [brief story premise]. Can you brainstorm 3 unexpected plot twists that could happen around the [story point, e.g., midpoint, climax]?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Write LinkedIn Connection Request Message",
+    "prompt": "Act as my writing assistant. Draft a personalized LinkedIn connection request message to [Person's Name], [Person's Title] at [Company]. Mention our common connection [Mutual Connection Name, if any] or interest in [Shared Interest/Topic].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Improve Sentence Structure Variety",
+    "prompt": "Act as my writing assistant. Review the following paragraph and suggest ways to vary the sentence structure to make it more engaging. Point out repetitive patterns.\n\n[Paste paragraph here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Write Meta Description for SEO",
+    "prompt": "Act as my writing assistant. Write a compelling meta description (under 160 characters) for a web page about [page topic]. Include the keyword '[keyword]' and encourage clicks.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Create Character Mannerisms",
+    "prompt": "Act as my writing assistant. Suggest 5 unique mannerisms or quirks for my character, [Character Name], who has the personality trait of being [trait, e.g., nervous, arrogant, overly enthusiastic].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Generate Email Templates for Common Replies",
+    "prompt": "Act as my writing assistant. Create reusable email templates for common situations like: [Situation 1, e.g., acknowledging receipt], [Situation 2, e.g., saying no politely], [Situation 3, e.g., requesting more information].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft Internal Announcement",
+    "prompt": "Act as my writing assistant. Draft an internal announcement email to the team regarding [Announcement topic, e.g., new hire, policy change, upcoming event]. Keep it clear, concise, and informative.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Flash Fiction (<100 words)",
+    "prompt": "Act as my writing assistant. Write a complete micro-story (under 100 words) based on the prompt: [Prompt, e.g., A character discovers a door that only appears at midnight].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Analyze Competitor's Writing Style",
+    "prompt": "Act as my writing assistant. Review the writing style on [Competitor's Website/Content Link]. Describe their tone, vocabulary, and sentence structure. How does it compare to our brand voice?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Condense Text to Word Count",
+    "prompt": "Act as my writing assistant. Please condense the following text to approximately [word count] words while retaining the core message.\n\n[Paste text here]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Generate Similes/Personification",
+    "prompt": "Act as my writing assistant. For the object/concept '[object/concept]', generate 3 similes and 2 examples of personification to describe it creatively.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Write Thank You Note",
+    "prompt": "Act as my writing assistant. Draft a brief thank you note (email or handwritten style) to [Recipient Name] for [Reason, e.g., their help on a project, an informational interview, a gift].",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Writing Concept Simply",
+    "prompt": "Act as my writing assistant. Explain the writing concept of '[Writing Concept, e.g., show, don't tell; active vs. passive voice; dangling modifier]' in simple terms with an example.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Marketing",
+    "title": "Write Website FAQ Answers",
+    "prompt": "Act as my writing assistant. Draft clear and concise answers for the following Frequently Asked Questions (FAQs) about [Product/Service]:\n1. [Question 1]\n2. [Question 2]\n3. [Question 3]",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Neural Network Layers",
+    "prompt": "Act as an AI Educator. Explain the different types of layers in a typical neural network (input, hidden, output) and their functions. Use a simple analogy.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Compare Supervised vs. Unsupervised Learning",
+    "prompt": "Act as a Machine Learning Instructor. Explain the key differences between supervised and unsupervised machine learning. Provide clear examples of problems each type is used to solve.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Reinforcement Learning with Analogy",
+    "prompt": "Act as an AI Concepts Explainer. Describe Reinforcement Learning (RL) using a simple analogy (e.g., training a pet, playing a game). Explain concepts like agent, environment, action, reward.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Natural Language Processing (NLP) Pipeline",
+    "prompt": "Act as an NLP Specialist. Outline the typical stages in a Natural Language Processing (NLP) pipeline (e.g., tokenization, stop word removal, stemming/lemmatization, vectorization). Briefly explain the purpose of each stage.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Computer Vision Concepts (Object Detection)",
+    "prompt": "Act as a Computer Vision Expert. Explain the concept of object detection in computer vision. How does it differ from image classification? Mention common techniques or challenges.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Discuss Ethical Implications of AI Bias",
+    "prompt": "Act as an AI Ethics Researcher. Discuss the ethical implications of bias in AI algorithms. Provide examples of how bias can manifest in areas like {{Area 1, e.g., hiring}} or {{Area 2, e.g., facial recognition}} and potential consequences.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Transfer Learning in AI",
+    "prompt": "Act as a Machine Learning Educator. Explain the concept of Transfer Learning in AI. How does leveraging a pre-trained model help in new tasks? Provide an example.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Generative Adversarial Networks (GANs) Simply",
+    "prompt": "Act as an AI Explainer. Describe Generative Adversarial Networks (GANs) in simple terms. Explain the roles of the generator and discriminator using an analogy (e.g., counterfeiter and police).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain AI Model Evaluation Metrics",
+    "prompt": "Act as a Data Scientist. Explain common evaluation metrics for classification models in AI, such as Accuracy, Precision, Recall, and F1-Score. Describe scenarios where each metric is most important.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Discuss Future Trends in AI",
+    "prompt": "Act as an AI Futurist. Discuss 3-5 potential future trends in Artificial Intelligence development and application over the next {{Number}} years. Consider areas like {{Area 1, e.g., healthcare}}, {{Area 2, e.g., automation}}, {{Area 3, e.g., creativity}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Coding",
+    "title": "Implement Simple Linear Regression (Python)",
+    "prompt": "Act as a Python Developer. Write Python code using `scikit-learn` to implement a simple linear regression model. Include steps for creating sample data, training the model, and making predictions.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Use Scikit-learn for Classification Task",
+    "prompt": "Act as a Machine Learning Practitioner. Provide Python code using `scikit-learn` to train a classification model (e.g., Logistic Regression, SVM) on a sample dataset like Iris or a custom one. Include data splitting and basic evaluation.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Basic NLP Text Preprocessing (Python NLTK/spaCy)",
+    "prompt": "Act as an NLP Developer. Write Python code using `NLTK` or `spaCy` to perform basic text preprocessing on a sample sentence: tokenization, lowercasing, stop word removal, and stemming/lemmatization.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Build a Simple Chatbot Response Logic (Python)",
+    "prompt": "Act as a Python Programmer. Write a simple Python function that takes a user input string and returns a predefined response based on keywords found in the input (e.g., if input contains 'hello', return 'Hi there!').",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Use TensorFlow/Keras for Image Classification (Basic)",
+    "prompt": "Act as an AI Developer. Provide a basic Python code structure using `TensorFlow/Keras` to build and train a simple Convolutional Neural Network (CNN) for image classification on a dataset like MNIST or CIFAR-10. Focus on model definition and training loop.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Implement K-Means Clustering (Python)",
+    "prompt": "Act as a Data Scientist. Write Python code using `scikit-learn` to perform K-Means clustering on a sample 2D dataset. Include steps for creating data, fitting the model, and visualizing the clusters.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Generate Text using a Simple RNN (Conceptual Code)",
+    "prompt": "Act as an AI Researcher. Provide conceptual Python code (using Keras/TensorFlow) outlining the structure for training a simple Recurrent Neural Network (RNN) or LSTM for character-level text generation.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Use an AI API for Text Generation (Python)",
+    "prompt": "Act as a Python Developer. Show how to make an API call in Python to a text generation service (like OpenAI's API, assuming API key setup) to generate text based on a given prompt.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Feature Engineering for Machine Learning (Python Pandas)",
+    "prompt": "Act as a Data Scientist. Provide Python code examples using `pandas` to perform common feature engineering tasks on a DataFrame, such as creating interaction terms, binning continuous variables, or encoding categorical features.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Hyperparameter Tuning using Grid Search (Python Scikit-learn)",
+    "prompt": "Act as a Machine Learning Engineer. Write Python code using `scikit-learn`'s `GridSearchCV` to perform hyperparameter tuning for a model like {{Model Name, e.g., RandomForestClassifier}} on a sample dataset.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Activation Functions in Neural Networks",
+    "prompt": "Act as an AI Tutor. Explain the role of activation functions (e.g., ReLU, Sigmoid, Tanh) in neural networks. Why are they necessary? Briefly describe the characteristics of 2-3 common activation functions.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Different Types of Neural Networks (CNN, RNN)",
+    "prompt": "Act as a Deep Learning Explainer. Briefly describe the key architectural differences and typical use cases for Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Embeddings in NLP",
+    "prompt": "Act as an NLP Expert. Explain the concept of word embeddings (e.g., Word2Vec, GloVe) in Natural Language Processing. Why are they useful compared to simpler representations like one-hot encoding?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Discuss AI Explainability (XAI) Methods",
+    "prompt": "Act as an AI Researcher. Briefly discuss the importance of AI Explainability (XAI). Mention 1-2 common methods (e.g., LIME, SHAP) used to understand the predictions of complex AI models.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Compare Different Machine Learning Algorithms",
+    "prompt": "Act as a Machine Learning Consultant. Compare and contrast two common machine learning algorithms, such as {{Algorithm 1, e.g., Decision Trees}} and {{Algorithm 2, e.g., Support Vector Machines (SVMs)}}. Discuss their pros, cons, and typical applications.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Coding",
+    "title": "Implement a Decision Tree Classifier (Python)",
+    "prompt": "Act as a Python Programmer. Write Python code using `scikit-learn` to train and visualize a Decision Tree Classifier on a simple dataset (e.g., Iris).",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Use Pandas for Data Loading and Exploration for ML",
+    "prompt": "Act as a Data Analyst. Provide Python code using `pandas` to load a dataset from a CSV file (`{{filename.csv}}`) and perform initial exploratory data analysis (EDA) relevant for machine learning (e.g., check data types, missing values, basic statistics).",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Create Training and Test Sets for ML Model (Python)",
+    "prompt": "Act as a Machine Learning Practitioner. Write Python code using `scikit-learn`'s `train_test_split` function to split a dataset (features `X` and target `y`) into training and testing sets.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Evaluate a Classification Model (Python)",
+    "prompt": "Act as a Data Scientist. Given true labels (`y_true`) and predicted labels (`y_pred`) from a classification model, write Python code using `scikit-learn` to calculate and print the confusion matrix and classification report.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Save and Load a Trained Machine Learning Model (Python)",
+    "prompt": "Act as a Machine Learning Engineer. Show how to save a trained `scikit-learn` model to a file using `pickle` or `joblib` in Python, and then how to load it back for making predictions.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Macronutrients vs. Micronutrients",
+    "prompt": "Act as a Nutrition Educator. Explain the difference between macronutrients (carbohydrates, proteins, fats) and micronutrients (vitamins, minerals). Describe the primary role of each macronutrient in the body.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Benefits of Different Exercise Types",
+    "prompt": "Act as a Fitness Advisor. Describe the main health benefits associated with different types of exercise: 1) Cardiovascular (aerobic), 2) Strength training (resistance), 3) Flexibility and Mobility.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain the Importance of Sleep for Health",
+    "prompt": "Act as a Health Educator. Explain why adequate sleep is crucial for physical and mental health. Discuss 3-5 key benefits of getting enough sleep (e.g., cognitive function, immune system, mood regulation).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Mindfulness Meditation Techniques",
+    "prompt": "Act as a Wellness Researcher. Briefly describe 2-3 common mindfulness meditation techniques (e.g., mindful breathing, body scan, loving-kindness meditation) and their potential benefits for stress reduction.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Summarize Benefits of Hydration",
+    "prompt": "Act as a Health Writer. Summarize the key benefits of staying properly hydrated for overall health. Mention 3-5 important functions water plays in the body.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Stress Response (Fight or Flight)",
+    "prompt": "Act as a Biology Teacher. Explain the body's physiological stress response, often called 'fight or flight'. Describe the key hormones involved (e.g., adrenaline, cortisol) and the short-term effects on the body.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Compare Different Dietary Approaches (General)",
+    "prompt": "Act as a Nutrition Information Provider. Briefly compare the general principles of two different dietary approaches, such as {{Diet 1, e.g., Mediterranean Diet}} and {{Diet 2, e.g., Ketogenic Diet}}. Focus on typical food inclusions/exclusions. (Note: This is for general information, not medical advice).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Common Nutrient Deficiencies",
+    "prompt": "Act as a Health Researcher. Identify 2-3 common nutrient deficiencies (e.g., Vitamin D, Iron, B12) and briefly describe their potential symptoms and common dietary sources.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Gut Health and Probiotics",
+    "prompt": "Act as a Wellness Educator. Explain the concept of 'gut health' and the role of the gut microbiome. Briefly describe what probiotics are and potential food sources.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Basic First Aid for Minor Injury",
+    "prompt": "Act as a First Aid Instructor. Describe the basic steps for providing first aid for a {{Minor Injury, e.g., small cut, minor burn, sprain}}. Emphasize when to seek professional medical help.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Weekly Meal Plan for Healthy Eating",
+    "prompt": "Act as a Meal Planner. Create a sample 7-day meal plan (breakfast, lunch, dinner) focused on healthy eating, incorporating {{Dietary Preference, e.g., balanced macros, plant-based}}. Include variety and simple meal ideas.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Design Beginner Workout Schedule",
+    "prompt": "Act as a Fitness Planner. Design a sample 3-day per week workout schedule for a beginner focusing on {{Goal, e.g., overall fitness, building strength}}. Include types of exercises and suggested duration/sets/reps.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Set SMART Fitness Goals",
+    "prompt": "Act as a Fitness Coach. Help me set SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goals for my fitness objective: {{Fitness Objective, e.g., 'run a 5k race', 'increase strength', 'improve flexibility'}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Morning Routine for Wellness",
+    "prompt": "Act as a Wellness Coach. Design a sample 30-60 minute morning routine focused on promoting wellness and a positive start to the day. Include elements like hydration, movement, mindfulness, and planning.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Develop Evening Routine for Better Sleep",
+    "prompt": "Act as a Sleep Hygiene Consultant. Develop a sample 30-60 minute evening routine ('wind-down ritual') designed to promote better sleep quality. Include suggestions like limiting screen time, relaxation techniques, and creating a calm environment.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Track Daily Water Intake Strategy",
+    "prompt": "Act as a Health Habit Coach. Suggest 3-5 practical strategies or tools for tracking daily water intake to ensure adequate hydration.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Plan Healthy Snack Ideas for Work",
+    "prompt": "Act as a Nutrition Planner. Generate a list of 10 healthy and easy snack ideas suitable for bringing to work or having during a busy day.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Schedule Time for Mindfulness/Meditation",
+    "prompt": "Act as a Time Management Advisor. Provide tips on how to realistically schedule short periods (e.g., 5-10 minutes) for mindfulness or meditation into a busy daily routine.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Grocery List based on Meal Plan",
+    "prompt": "Act as a Meal Prep Assistant. Based on the following simple meal plan: {{Meal Plan Summary}}, generate a categorized grocery shopping list.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Find Healthy Recipes",
+    "prompt": "Act as a Recipe Finder. Suggest 3-5 healthy recipes for {{Meal Type, e.g., dinner, lunch}} that meet the following criteria: {{Criteria, e.g., quick prep time, vegetarian, high protein}}. Provide links or summaries.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Journal Prompts for Stress Relief",
+    "prompt": "Act as a Wellness Journal Guide. Provide 5 journal prompts designed to help process and relieve stress (e.g., 'What am I grateful for today?', 'What's weighing on my mind?', 'How did I cope with a challenge recently?').",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Affirmations for Positive Body Image",
+    "prompt": "Act as a Positive Psychology Coach. Write 5-7 positive affirmations focused on promoting body acceptance and a healthy body image.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Describe a Perfect Relaxing Day",
+    "prompt": "Act as a Creative Writer. Describe your ideal perfect relaxing day in detail. Focus on activities, environment, and feelings that promote rest and rejuvenation.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Brainstorm Healthy Hobby Ideas",
+    "prompt": "Act as a Lifestyle Consultant. Brainstorm a list of 10 hobby ideas that promote physical or mental wellness (e.g., hiking, yoga, painting, learning an instrument, gardening).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Create Vision Board Elements for Wellness Goals",
+    "prompt": "Act as a Vision Board Coach. For the wellness goal of {{Wellness Goal, e.g., 'reducing stress', 'eating healthier'}}, suggest 5-7 images, words, or quotes that could be included on a vision board.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Different Types of Yoga",
+    "prompt": "Act as a Yoga Instructor. Briefly explain the differences between 3-4 common styles of yoga (e.g., Hatha, Vinyasa, Ashtanga, Yin). Mention the general focus or intensity level of each.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Effects of Screen Time on Health",
+    "prompt": "Act as a Health Information Researcher. Summarize the potential negative effects of excessive screen time on physical health (e.g., eye strain, sleep disruption) and mental health (e.g., anxiety, focus).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Plan Digital Detox Weekend",
+    "prompt": "Act as a Digital Wellness Planner. Outline a plan for a weekend 'digital detox'. Include setting intentions, planning alternative activities, managing urges, and reflecting on the experience.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Checklist for Ergonomic Workspace Setup",
+    "prompt": "Act as an Ergonomics Advisor. Create a checklist for setting up an ergonomic home or office workspace. Include points for chair height, monitor position, keyboard/mouse placement, and lighting.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Short Poem about Nature and Wellbeing",
+    "prompt": "Act as a Poet. Write a short poem (e.g., 8-12 lines) connecting elements of nature (e.g., trees, water, sunlight) to feelings of peace or wellbeing.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Weekly Cleaning Schedule by Room",
+    "prompt": "Act as a Home Organizer. Create a sample weekly cleaning schedule, assigning specific rooms or tasks (e.g., bathrooms, vacuuming, dusting) to different days of the week for manageable upkeep.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Develop Home Organization Plan",
+    "prompt": "Act as a Professional Organizer. Outline a step-by-step plan for organizing a specific area of the home: {{Room or Area, e.g., kitchen pantry, garage, home office desk}}. Include steps like decluttering, sorting, assigning zones, and choosing storage solutions.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Plan Budget for Home Project",
+    "prompt": "Act as a Home Budget Planner. Outline the categories needed to create a budget for a home renovation or improvement project: {{Project Name, e.g., painting a room, landscaping}}. Include materials, labor (if any), tools, and contingency.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Decluttering Checklist",
+    "prompt": "Act as a Decluttering Coach. Create a checklist inspired by the KonMari method or general principles for decluttering {{Item Category, e.g., clothes, books, papers}}. Include questions to ask when deciding what to keep.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Schedule Seasonal Home Maintenance Tasks",
+    "prompt": "Act as a Home Maintenance Planner. Create a checklist of common seasonal home maintenance tasks for {{Season, e.g., Spring, Fall}}. Include items like cleaning gutters, checking HVAC systems, inspecting roof, etc.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Plan Weekly Grocery Shopping List",
+    "prompt": "Act as a Household Manager. Create a template for a weekly grocery shopping list, categorized by store sections (e.g., Produce, Dairy, Pantry, Meat/Protein, Frozen).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Organize Digital Files Strategy",
+    "prompt": "Act as a Digital Organization Expert. Propose a strategy for organizing digital files (e.g., documents, photos) on a computer or cloud storage. Include recommendations for folder structure, naming conventions, and regular cleanup.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Family Chore Chart",
+    "prompt": "Act as a Family Organizer. Create a sample weekly chore chart template suitable for a family with {{Number}} children of ages {{Ages}}. Assign age-appropriate chores.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Plan Steps for DIY Project",
+    "prompt": "Act as a DIY Project Planner. Break down the DIY project '{{Project Name, e.g., Build a Bookshelf}}' into a sequence of manageable steps, including gathering materials, preparation, assembly, and finishing.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Set Up Bill Payment Reminder System",
+    "prompt": "Act as a Personal Finance Organizer. Suggest 3 different methods or tools for setting up a system to track bills and ensure timely payments (e.g., calendar reminders, budgeting apps, automatic payments).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Brainstorm Home Decor Ideas",
+    "prompt": "Act as an Interior Decorator. Brainstorm 5 decor ideas for a {{Room, e.g., living room, bedroom}} with a {{Style, e.g., modern farmhouse, bohemian, industrial}} aesthetic. Focus on elements like color, texture, furniture, and accessories.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Design Layout for Small Garden",
+    "prompt": "Act as a Garden Designer. Sketch a simple layout concept (text description) for a small balcony or patio garden. Suggest types of plants (e.g., herbs, flowers, vegetables) suitable for containers and the layout.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Create Color Palette for Room Makeover",
+    "prompt": "Act as a Color Consultant. Create 2-3 different color palette options (3-4 colors each, provide names or HEX codes if possible) for a {{Room}} makeover with the desired mood: {{Mood, e.g., calming, energetic, sophisticated}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Plan Themed Dinner Party",
+    "prompt": "Act as an Event Planner. Outline a plan for a themed dinner party: {{Theme, e.g., Italian Night, Murder Mystery, Tropical Luau}}. Include ideas for menu, decorations, music, and activities.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Description for House Listing (Fictional)",
+    "prompt": "Act as a Real Estate Copywriter. Write an engaging and descriptive listing for a fictional house: {{House Description, e.g., a cozy 2-bedroom cottage, a modern downtown loft}}. Highlight key features and lifestyle benefits.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Generate Ideas for Upcycling Household Items",
+    "prompt": "Act as a DIY Craft Blogger. Generate 5 creative ideas for upcycling common household items like {{Item 1, e.g., glass jars}}, {{Item 2, e.g., old t-shirts}}, or {{Item 3, e.g., tin cans}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Design a Cozy Reading Nook Concept",
+    "prompt": "Act as an Interior Designer. Describe the key elements needed to create a cozy reading nook in {{Location, e.g., a corner of the living room, under a window}}. Include seating, lighting, storage, and comfort items.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Plan a Gallery Wall Layout",
+    "prompt": "Act as a Home Stylist. Suggest 2-3 different layout options (e.g., grid, salon style, linear) for creating a gallery wall using {{Number}} frames of varying sizes in {{Room}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Brainstorm DIY Gift Ideas",
+    "prompt": "Act as a Craft Expert. Brainstorm 5 DIY gift ideas suitable for {{Occasion, e.g., birthday, holidays}} for {{Recipient Type, e.g., friend, parent}}. Consider different skill levels.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Creativity",
+    "title": "Write Instructions for Simple Craft Project",
+    "prompt": "Act as a Craft Instructor. Write clear, step-by-step instructions for a simple craft project like {{Project, e.g., making a paper airplane, creating a salt dough ornament}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Energy Saving Tips for Home",
+    "prompt": "Act as an Energy Efficiency Advisor. List 5-7 practical tips for saving energy and reducing utility bills at home.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Learn Basic Home Repair",
+    "prompt": "Act as a Home Repair Guide. Explain the basic steps to fix a common household issue like {{Issue, e.g., a running toilet, a clogged drain, changing a furnace filter}}. Include necessary tools.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Compare Different Types of House Plants",
+    "prompt": "Act as a Plant Expert. Compare 3 different types of popular houseplants (e.g., {{Plant 1}}, {{Plant 2}}, {{Plant 3}}) suitable for beginners. Discuss their light, water, and care requirements.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Sustainable Living Practices",
+    "prompt": "Act as a Sustainability Advocate. Research and list 5 practical ways to live more sustainably at home, focusing on areas like waste reduction, water conservation, and energy use.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Understand Basic Home Security Measures",
+    "prompt": "Act as a Security Consultant. Outline basic home security measures homeowners or renters can take to improve safety, covering doors, windows, lighting, and alarms.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain How to Read Utility Bills",
+    "prompt": "Act as a Consumer Advisor. Explain the common sections found on a typical utility bill (e.g., electricity, gas) and what key terms like kWh or therms mean.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Childproofing Checklist",
+    "prompt": "Act as a Child Safety Expert. Research and create a basic checklist for childproofing a home for {{Age Group, e.g., infants, toddlers}}. Cover key areas like electrical outlets, cabinets, stairs, and furniture.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Plan Packing List for Moving House",
+    "prompt": "Act as a Moving Coordinator. Create a comprehensive checklist template for packing belongings when moving house, categorized by room.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Create Inventory List for Home Insurance",
+    "prompt": "Act as an Insurance Advisor. Create a template for a home inventory list for insurance purposes. Include columns for Item Description, Purchase Date, Estimated Value, Serial Number (if applicable), and Photo/Receipt.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Learn Basic Sewing Repair Technique",
+    "prompt": "Act as a Sewing Instructor. Explain the basic steps for a simple sewing repair like {{Repair, e.g., sewing on a button, fixing a small seam rip}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Coding",
+    "title": "Implement Basic Linear Search Algorithm (Python)",
+    "prompt": "Act as a Computer Science Tutor. Write a Python function to implement a linear search algorithm to find an element in a list. Explain its time complexity.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Implement Basic Binary Search Algorithm (Python)",
+    "prompt": "Act as a Computer Science Tutor. Write a Python function to implement a binary search algorithm to find an element in a sorted list. Explain its prerequisites and time complexity.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Use a Search API (Python)",
+    "prompt": "Act as a Software Developer. Provide a Python code example demonstrating how to make a request to a generic search API (like Google Custom Search Engine API, assuming setup) with a query and process the basic results.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Build Simple Inverted Index (Conceptual Code)",
+    "prompt": "Act as an Information Retrieval Expert. Provide conceptual Python code or pseudocode demonstrating how to build a simple inverted index (mapping words to document IDs) from a small collection of text documents.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Coding",
+    "title": "Implement TF-IDF Vectorization for Search (Python)",
+    "prompt": "Act as an NLP Engineer. Write Python code using `scikit-learn`'s `TfidfVectorizer` to transform a list of text documents into TF-IDF vectors, a common step in search ranking.",
+    "language": "Python",
+    "outputType": "Code"
+  },
+  {
+    "category": "Productivity",
+    "title": "Formulate Advanced Search Queries",
+    "prompt": "Act as a Research Assistant. Explain how to use advanced search operators (e.g., `\"\"`, `-`, `site:`, `filetype:`, `OR`) in search engines like Google to refine search results for {{Research Topic}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Strategy for Organizing Research Search Results",
+    "prompt": "Act as a Knowledge Manager. Suggest a strategy for organizing and saving relevant search results found during research for {{Project/Topic}}. Include tools or methods like bookmarking folders, note-taking apps, or citation managers.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Tips for Evaluating Search Result Credibility",
+    "prompt": "Act as a Librarian. Provide 5 key tips for evaluating the credibility and reliability of information found in search engine results. Consider source, author, date, bias, and supporting evidence.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Using Browser Search History Effectively",
+    "prompt": "Act as a Productivity Hacker. Suggest tips for using browser search history effectively to quickly find previously visited pages or track research paths.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Productivity",
+    "title": "Setting Up Search Alerts",
+    "prompt": "Act as an Information Specialist. Explain how to set up search alerts (e.g., using Google Alerts) to monitor the web for new content related to specific keywords or topics like {{Topic}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Data Analysis",
+    "title": "Analyze Search Query Logs (Conceptual)",
+    "prompt": "Act as a Data Analyst. Conceptually outline how you would analyze search query logs from a website or application. What insights could be gained regarding user intent, popular topics, or search effectiveness?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Data Analysis",
+    "title": "Identify Top Search Terms Leading to Website",
+    "prompt": "Act as a Web Analyst. Using data from {{Analytics Tool, e.g., Google Analytics, Google Search Console}}, explain how to identify the top organic search terms that are driving traffic to {{Website}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Data Analysis",
+    "title": "Calculate Click-Through Rate (CTR) for Search",
+    "prompt": "Act as a Digital Marketing Analyst. Explain how to calculate the Click-Through Rate (CTR) for search results (organic or paid). What data is needed (impressions, clicks)? Why is CTR an important metric?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain How Search Engines Work",
+    "prompt": "Act as a Tech Educator. Explain the basic process of how search engines like Google work in simple terms. Cover the concepts of crawling, indexing, and ranking.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Compare Different Search Algorithms",
+    "prompt": "Act as a Computer Science Instructor. Briefly compare linear search and binary search algorithms. Discuss their time complexity and when each is appropriate to use.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Compound Interest",
+    "prompt": "Act as a Finance Educator. Explain the concept of compound interest using a simple example. How does it differ from simple interest, and why is it powerful for long-term investing?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Difference Between Saving and Investing",
+    "prompt": "Act as a Financial Literacy Coach. Explain the key differences between saving money and investing money. Discuss the typical goals, risks, and potential returns associated with each.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Inflation and its Impact",
+    "prompt": "Act as an Economics Teacher. Explain what inflation is and how it affects the purchasing power of savings over time. Provide a simple example.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Compare Stocks, Bonds, and Mutual Funds",
+    "prompt": "Act as an Investment Basics Explainer. Briefly describe the basic characteristics of stocks, bonds, and mutual funds as investment types. Mention general risk and return potential.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Diversification in Investing",
+    "prompt": "Act as a Financial Advisor (Educational). Explain the principle of diversification in investing ('Don't put all your eggs in one basket'). Why is it important for managing risk?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Different Types of Bank Accounts",
+    "prompt": "Act as a Banking Educator. Describe the main features and typical uses of different types of bank accounts: Checking accounts, Savings accounts, and Money Market accounts.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Credit Score Basics",
+    "prompt": "Act as a Credit Counselor (Educational). Explain what a credit score is, why it's important, and list the major factors that influence it (e.g., payment history, credit utilization).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Different Types of Retirement Accounts",
+    "prompt": "Act as a Retirement Planning Educator. Briefly describe the basic features of common retirement savings accounts like 401(k)s and Traditional/Roth IRAs in the US (or relevant local equivalent).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Budgeting Principles",
+    "prompt": "Act as a Personal Finance Coach. Explain a common budgeting principle, such as the 50/30/20 rule (Needs/Wants/Savings). How can it help manage money?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Understand Different Types of Insurance",
+    "prompt": "Act as an Insurance Educator. Briefly explain the purpose of common types of insurance: Health insurance, Auto insurance, Homeowners/Renters insurance, and Life insurance.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Net Worth Calculation",
+    "prompt": "Act as a Financial Planner (Educational). Explain the concept of net worth. How is it calculated (Assets - Liabilities)? Why is tracking net worth useful?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Basics of Mortgages and Loans",
+    "prompt": "Act as a Loan Officer (Educational). Explain basic concepts related to loans and mortgages, such as principal, interest rate (fixed vs. variable), term, and down payment.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Different Tax Concepts",
+    "prompt": "Act as a Tax Educator. Briefly explain the difference between income tax, sales tax, and property tax in general terms.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Understand Basics of Financial Statements",
+    "prompt": "Act as a Business Basics Teacher. Briefly explain the purpose of two basic financial statements: the Balance Sheet (what a company owns and owes) and the Income Statement (revenue and expenses).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Robo-Advisors vs. Human Advisors",
+    "prompt": "Act as a Financial Services Researcher. Compare the general pros and cons of using a robo-advisor versus a traditional human financial advisor for investment management.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create Simple Personal Monthly Budget Template",
+    "prompt": "Act as a Personal Finance Template Creator. Create a simple template (text-based or spreadsheet outline) for a personal monthly budget. Include categories for Income, Savings, Needs (Housing, Food, Transport), and Wants (Entertainment, Hobbies).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft General Advice on Setting Financial Goals",
+    "prompt": "Act as a Financial Goal Setting Coach. Draft general advice on how to set effective personal financial goals using the SMART framework (Specific, Measurable, Achievable, Relevant, Time-bound). Provide examples.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Outline Steps for Creating an Emergency Fund",
+    "prompt": "Act as a Financial Preparedness Advisor. Outline the key steps for building an emergency fund. Include determining the target amount (e.g., 3-6 months of expenses), choosing where to keep it, and automating contributions.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Explain Debt Paydown Strategies (General)",
+    "prompt": "Act as a Financial Educator. Explain two common strategies for paying down debt: the Debt Snowball method and the Debt Avalanche method. Describe how each works generally.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft Email Explaining Company Financial Policy",
+    "prompt": "Act as an HR/Finance Communicator. Draft a clear and concise email to employees explaining the company's policy regarding {{Financial Policy, e.g., expense reimbursement, travel booking}}. Include key steps and contact points.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create Template for Tracking Personal Expenses",
+    "prompt": "Act as a Budgeting Tool Designer. Create a simple template (text or spreadsheet outline) for tracking daily or weekly personal expenses. Include columns for Date, Category, Item Description, and Amount.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Outline Key Sections of a Basic Financial Plan",
+    "prompt": "Act as a Financial Planner (Educational). Outline the typical key sections found in a basic personal financial plan (conceptual). Include areas like Goals, Net Worth, Budget/Cash Flow, Debt Management, Investments, Insurance, Estate Planning.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Summarize Financial News Article",
+    "prompt": "Act as a Financial Analyst Assistant. Summarize the key points and potential implications of the following financial news article: {{Article Link or Pasted Text}}.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft Presentation Outline Explaining Financial Concept",
+    "prompt": "Act as a Financial Trainer. Create a presentation outline (slides/sections) to explain the financial concept of {{Financial Concept, e.g., Time Value of Money}} to a non-financial audience within the company.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create Checklist for Reviewing Personal Finances",
+    "prompt": "Act as a Personal Finance Organizer. Create a checklist for conducting an annual review of personal finances. Include items like reviewing goals, updating budget, checking credit report, reviewing investments, and assessing insurance coverage.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Risk Tolerance in Investing",
+    "prompt": "Act as an Investment Educator. Explain the concept of risk tolerance in investing. What factors influence it (e.g., age, goals, time horizon)? How does it relate to investment choices?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Describe Index Funds vs. Actively Managed Funds",
+    "prompt": "Act as a Mutual Fund Explainer. Describe the difference between index funds and actively managed mutual funds. Discuss their general approach, typical costs (expense ratios), and performance expectations.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Dollar-Cost Averaging Strategy",
+    "prompt": "Act as an Investment Strategy Educator. Explain the 'dollar-cost averaging' investment strategy. How does investing a fixed amount regularly work, and what are its potential benefits (e.g., reducing timing risk)?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Understand Basics of Estate Planning",
+    "prompt": "Act as an Estate Planning Educator. Briefly explain the purpose of basic estate planning documents like a Will and Power of Attorney.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Research Financial Scams",
+    "prompt": "Act as a Consumer Protection Advocate. Research and describe 2-3 common types of financial scams (e.g., phishing, investment fraud, identity theft) and provide general tips on how to avoid them.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain College Savings Plans",
+    "prompt": "Act as a Financial Aid Educator. Briefly explain the concept of college savings plans like the 529 plan in the US (or relevant local equivalent). Mention key features like tax advantages.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create Template for Calculating Net Worth",
+    "prompt": "Act as a Financial Template Creator. Create a template (text or spreadsheet outline) for calculating personal net worth. Include sections for listing Assets (e.g., Cash, Investments, Property) and Liabilities (e.g., Loans, Mortgages, Credit Card Debt).",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft General Tips for Improving Credit Score",
+    "prompt": "Act as a Credit Health Advisor (Educational). Draft a list of 5-7 general tips for improving or maintaining a good credit score. Focus on actionable advice like paying bills on time and managing credit utilization.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Outline Factors for Choosing Insurance",
+    "prompt": "Act as an Insurance Guide (Educational). Outline general factors to consider when choosing an insurance policy (e.g., {{Insurance Type: Health, Auto}}). Include coverage limits, deductibles, premiums, and provider network/reputation.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create Simple Investment Tracking Template",
+    "prompt": "Act as a Personal Finance Tool Designer. Create a simple template (text or spreadsheet outline) for tracking investments. Include columns for Investment Name, Ticker Symbol (if applicable), Purchase Date, Quantity, Purchase Price, Current Value.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Draft Explanation of Employee Stock Options (General)",
+    "prompt": "Act as an HR Benefits Explainer. Draft a general explanation of what employee stock options (ESOs) are. Cover basic concepts like grant price, vesting schedule, and exercise in simple terms.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Compare Renting vs. Buying a Home (Financial)",
+    "prompt": "Act as a Housing Finance Educator. Compare the key financial aspects of renting versus buying a home. Discuss factors like upfront costs, ongoing expenses, equity building, and flexibility.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Learning",
+    "title": "Explain Different Types of Investment Orders",
+    "prompt": "Act as a Stock Market Educator. Explain the difference between common stock market order types: Market Order and Limit Order. When might each be used?",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Create FAQ about Financial Product (General Info)",
+    "prompt": "Act as a Financial Product Explainer. Create a short FAQ (3-5 questions) providing general information about {{Financial Product, e.g., Health Savings Accounts (HSAs), Certificates of Deposit (CDs)}}. Focus on what it is, key features, and general benefits.",
+    "language": "English",
+    "outputType": "Text"
+  },
+  {
+    "category": "Business",
+    "title": "Outline Steps to Prepare for Tax Season (General)",
+    "prompt": "Act as a Tax Preparation Advisor (Educational). Outline a general checklist of steps individuals can take to prepare for tax season. Include gathering documents (income statements, receipts), understanding deductions/credits, and choosing a filing method.",
+    "language": "English",
+    "outputType": "Text"
   }
-  
-  
 
 ]
